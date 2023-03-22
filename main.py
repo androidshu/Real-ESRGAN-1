@@ -14,4 +14,4 @@ if __name__ == '__main__':
         if sr_image is None:
             continue
         sr_image = model.predict(sr_image)
-        cv2.imwrite(sr_image, f'results/{i}.png')
+        cv2.imwrite(f'results/{i}.png', sr_image)
